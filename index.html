@@ -58,18 +58,18 @@
         margin-bottom: 25px;
         text-align: center;
     }
-    
-    /* === STYLE RIÊNG CHO TIÊU ĐỀ ALBUM (MỚI) === */
+    
+    /* === STYLE ALBUM === */
     .album-heading {
-        font-size: 1.4em; /* Lớn hơn tiêu đề media */
+        font-size: 1.4em;
         font-weight: bold;
-        color: #3f51b5; /* Màu xanh nổi bật cho album */
+        color: #3f51b5;
         margin: 30px 0 15px 0;
         padding-bottom: 5px;
         border-bottom: 1px solid #e0e0e0;
     }
-    
-    /* === STYLE TIÊU ĐỀ CHO ẢNH/NHẠC/VIDEO === */
+    
+    /* === STYLE TIÊU ĐỀ MEDIA === */
     .media-title {
         font-weight: bold;
         margin-bottom: 15px;
@@ -78,7 +78,7 @@
     }
     
     /* Điều chỉnh kích thước và vị trí media */
-    .media-column img, .media-column audio, .media-column video {
+    .media-column img, .media-column audio, .media-column video, .media-column iframe {
         display: block;
         margin: 10px auto; 
         max-width: 100%;
@@ -107,29 +107,28 @@
         <div class="media-column">
       <h2>🖼️ Hình ảnh</h2>
       
-      <h3 class="album-heading">Album: Phoning</h3>
+      <h3 class="album-heading">Album: Phoning Chat Updates</h3>
       
-      <p class="media-title">240824 Hanni Phoning Chat Photo Update</p>
-      <img src="images/pic1.jpg" width="350">
+            <p class="media-title">240824 Hanni Phoning Chat Photo Update</p>
+      <img src="images/pic1.jpg">
       
-      <p class="media-title">231225 NewJeans Phoning Photo Update</p>
-      <img src="images/pic2.jpg" width="350"> 
-      
-          </div>
+            <p class="media-title">231225 NewJeans Phoning Photo Update</p>
+      <img src="images/pic2.jpg"> 
+    </div>
 
         <div class="media-column">
       <h2>🎧 Nhạc</h2>
       
-      <h3 class="album-heading">Album: Winter ver</h3>
+      <h3 class="album-heading">Album: Winter Special Songs</h3>
       
-      <p class="media-title">Supernatural (Winter ver) - NewJeans</p>
+            <p class="media-title">Supernatural (Winter ver) - NewJeans</p>
       <audio controls>
           <source src="music/song1.mp3" type="audio/mpeg">
       </audio>
       
       <h3 class="album-heading">Album: Band Live Performances</h3>
       
-      <p class="media-title">Bubble Gum (Band Live ver) - NewJeans</p>
+            <p class="media-title">Bubble Gum (Band Live ver) - NewJeans</p>
        <audio controls>
           <source src="music/song2.mp3" type="audio/mpeg">
       </audio>
@@ -138,12 +137,24 @@
         <div class="media-column">
       <h2>🎬 Video</h2>
       
-      <h3 class="album-heading">Album: Short video</h3>
+      <h3 class="album-heading">Album: Short Video (Local)</h3>
       
-      <p class="media-title">hurt (party 4 u) </p>
+            <p class="media-title">hurt (party 4 u) </p>
       <video width="100%" controls>
           <source src="videos/video1.mp4" type="video/mp4">
       </video>
+
+      <h3 class="album-heading">Link: Youtube</h3>
+      
+            <p class="media-title">Video 1</p>
+      <iframe 
+          width="100%" 
+          height="200" 
+          src="https://www.youtube.com/embed/nlaGUdWzJKo" 
+          frameborder="0" 
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+          allowfullscreen>
+      </iframe>
     </div>
     
   </div> </body>
